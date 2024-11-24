@@ -118,7 +118,7 @@ def _save_ndarray(handler, group, name, x, filters=None):
         itemsize = x.itemsize // 4
         atom = tables.UInt8Atom()
         x = x.view(dtype=np.uint8)
-    elif np.issubdtype(x.dtype, np.string_):
+    elif np.issubdtype(x.dtype, np.bytes_):
         strtype = b'ascii'
         itemsize = x.itemsize
         atom = tables.StringAtom(itemsize)
