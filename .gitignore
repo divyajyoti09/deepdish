@@ -19,6 +19,7 @@ build
 *.pyc
 *.c
 *.so
+*.egg-info/
 
 # OS or Editor folders
 .DS_Store
